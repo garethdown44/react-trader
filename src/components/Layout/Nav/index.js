@@ -4,7 +4,7 @@ import classnames from 'classnames/bind';
 import Logo from './Logo';
 import styles from './styles.module.scss';
 
-const debug = require('debug')('sap:Nav');
+const debug = require('debug')('rt:Nav');
 
 const cx = classnames.bind(styles);
 

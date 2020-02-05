@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import styles from './styles.module.css';
 
-const debug = require('debug')('sap:Dashboard');
+const debug = require('debug')('rt:Dashboard');
 
 function renderRows(rows) {
   return rows.map((row, index) => (

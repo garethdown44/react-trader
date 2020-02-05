@@ -29,16 +29,7 @@ export default async (action, ccyCpl, rate, notional, success, error) => {
   };
 
   debugApp('POST:', url, payload);
-
-  // $.ajax({
-  //   type: 'POST',
-  //   url,
-  //   data: payload,
-  //   success: successWrapper,
-  //   error: errorWrapper,
-  //   contentType: 'application/json'
-  // });
-
+  
   try {
     const result = await axios({
       method: 'POST',

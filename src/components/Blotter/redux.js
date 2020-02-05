@@ -1,5 +1,5 @@
 
-import trades from '../../shared/blotter';
+import trades from '../../services/blotter';
 export const RECEIVE_POSITION = 'RECEIVE_POSITION';
 
 export function subscribePositions() {

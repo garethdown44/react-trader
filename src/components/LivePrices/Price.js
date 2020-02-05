@@ -4,8 +4,7 @@ import numeral from 'numeral';
 import moment from 'moment';
 import classNames from 'classnames/bind';
 import styles from './styles.module.css';
-// import getStream from './prices';
-import getStreamingPrices from '../../shared/getStreamingPrices';
+import getStreamingPrices from '../../services/getStreamingPrices';
 
 const cx = classNames.bind(styles);
 
@@ -70,18 +69,18 @@ export default class Price extends React.Component {
     return (
       <tr>
         <td className={styles.product}>{this.props.product}</td>
-        <td className={cx({ [this.state.increaseClass]: this.state.isIncrease, [this.state.decreaseClass]: !this.state.isIncrease })}>{numeral(this.state.price).format('0.00')}</td>
+        <td className={cx({ [this.state.increaseClass]: this.state.isIncrease, [this.state.decreaseClass]: !this.state.isIncrease })}>{numeral(this.state.price).format('0.00000')}</td>
         <td>
-          {numeral(this.state.high).format('0.00')}
+          {numeral(this.state.high).format('0.00000')}
         </td>
         <td>
-          {numeral(this.state.low).format('0.00')}
+          {numeral(this.state.low).format('0.00000')}
         </td>
         <td className={cx({ changePositive: this.state.isChangePositive, changeNegative: !this.state.isChangePositive })}>
-          {numeral(this.state.change).format('0.00')}
+          {numeral(this.state.change).format('0.00000')}
         </td>
         <td>
-          {moment(this.state.time).format('HH:mm:SS')}
+          {moment(this.state.time).format('HH:mm:ss')}
         </td>
       </tr>
     );

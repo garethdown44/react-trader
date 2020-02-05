@@ -1,0 +1,113 @@
+.table {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #d1d1d1;
+  border-collapse: collapse;
+  font-size: 12px;
+  width: 100%;
+}
+
+.table th {
+  background: #bfbebe;
+  color: #fff;
+  font-weight: normal;
+  padding: 12px 9px;
+  border: 1px solid #e4e4e4;
+  text-align: left;
+}
+
+.table td {
+  padding: 12px 9px;
+  background-color: #f1f1f1;
+  border: 1px solid #e4e4e4;
+  text-align: left;
+}
+
+@keyframes to-increase {
+  0% {
+    background: #f1f1f1;
+  }
+
+  25% {
+    background: #52b886;
+  }
+
+  100% {
+    background: #f1f1f1;
+  }
+}
+
+@keyframes to-decrease {
+  0% {
+    background: #f1f1f1;
+  }
+
+  25% {
+    background: #e26163;
+  }
+
+  100% {
+    background: #f1f1f1;
+  }
+}
+
+@keyframes to-increase2 {
+  0% {
+    background: #f1f1f1;
+  }
+
+  25% {
+    background: #52b886;
+  }
+
+  100% {
+    background: #f1f1f1;
+  }
+}
+
+@keyframes to-decrease2 {
+  0% {
+    background: #f1f1f1;
+  }
+
+  25% {
+    background: #e26163;
+  }
+
+  100% {
+    background: #f1f1f1;
+  }
+}
+
+td.neutral {
+  background: #f1f1f1;
+}
+
+td.increase {
+  animation: to-increase 500ms;
+}
+
+td.decrease {
+  animation: to-decrease 500ms;
+}
+
+td.increase2 {
+  animation: to-increase2 500ms;
+}
+
+td.decrease2 {
+  animation: to-decrease2 500ms;
+}
+
+td.changePositive {
+  font-weight: bold;
+  color: #52b886;
+}
+
+td.changeNegative {
+  font-weight: bold;
+  color: #e26163;
+}
+
+td.product {
+  font-weight: bold;
+}

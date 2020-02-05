@@ -1,0 +1,16 @@
+.main {
+  background: #6b6b6b;
+  color: #FFF;
+  font-size: 16px;
+  height: 30px;
+  padding-top: 3px;
+  padding-left: 17px;
+  clear: both;
+  font-weight: normal;
+  width: 100%;
+}
+
+.menuitem {
+  color: #FFF;
+  margin-right: 10px;
+}

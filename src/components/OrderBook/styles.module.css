@@ -1,0 +1,159 @@
+.dashboardContainer {
+  background: #CCC;
+  height: 1000px;
+  padding: 20px 0 0 20px;
+}
+
+.widgetContainer {
+  width: 300px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.widget {
+  background: #FFF;
+  height: 230px;
+}
+
+.widgetTitle {
+  color: #10778A;
+  font-size: 12px;
+  font-family: Arial;
+  height: 40px;
+  border-bottom: 1px solid #E4E4E4;
+  padding: 14px;
+}
+
+.widgetContent {
+  padding: 15px;
+  overflow: scroll;
+}
+
+.table {
+  border: 1px solid #D1D1D1;
+  border-collapse: collapse;
+  font-size: 10px;
+  width: 100%;
+  height: 210px;
+}
+
+.table th {
+  background: #BFBEBE;
+  color: #FFF;
+  text-align: left;
+  font-weight: normal;
+  padding: 12px 9px;
+}
+
+.table td {
+  padding: 12px 9px;
+  background-color: #F1F1F1;
+}
+
+.table td.buy {
+  background: #9CE1FB;
+  color: #FFF;
+}
+
+.table td.sell {
+  background: #f3c375;
+  color: #FFF;
+}
+
+.profit {
+  color: #52B886;
+}
+
+.loss {
+  color: #E26163;
+}
+
+@keyframes to-increase {
+  0% {
+    background: #F1F1F1;
+  }
+
+  25% {
+    background: #52B886;
+  }
+
+  100% {
+    background: #F1F1F1;
+  }
+}
+
+@keyframes to-decrease {
+  0% {
+    background: #F1F1F1;
+  }
+
+  25% {
+    background: #E26163;
+  }
+
+  100% {
+    background: #F1F1F1;
+  }
+}
+
+@keyframes to-increase2 {
+  0% {
+    background: #F1F1F1;
+  }
+
+  25% {
+    background: #52B886;
+  }
+
+  100% {
+    background: #F1F1F1;
+  }
+}
+
+@keyframes to-decrease2 {
+  0% {
+    background: #F1F1F1;
+  }
+
+  25% {
+    background: #E26163;
+  }
+
+  100% {
+    background: #F1F1F1;
+  }
+}
+
+td.neutral {
+  background: #F1F1F1;
+}
+
+td.increase {
+  animation: to-increase 500ms;
+}
+
+td.decrease {
+  animation: to-decrease 500ms;
+}
+
+td.increase2 {
+  animation: to-increase2 500ms;
+}
+
+td.decrease2 {
+  animation: to-decrease2 500ms;
+}
+
+td.changePositive {
+  font-weight: bold;
+  color: #52B886;
+}
+
+td.changeNegative {
+  font-weight: bold;
+  color: #E26163;
+}
+
+td.product {
+  font-weight: bold;
+}
